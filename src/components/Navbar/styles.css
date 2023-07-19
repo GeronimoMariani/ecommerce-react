@@ -1,0 +1,36 @@
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
+
+.subNavBar {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 3rem;
+}
+
+.navButton {
+    padding: 0.5rem;
+    background-color: gray;
+    color: black;
+    border: 0px solid;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 2rem;
+}

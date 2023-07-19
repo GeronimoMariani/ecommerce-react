@@ -1,0 +1,10 @@
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.countCart {
+    font-size: 2rem;
+    margin-right: 1.3rem;
+}
