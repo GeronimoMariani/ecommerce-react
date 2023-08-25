@@ -4,7 +4,12 @@
     gap: 1rem;
 }
 
+.cart > svg {
+    color: white;
+}
+
 .countCart {
     font-size: 2rem;
     margin-right: 1.3rem;
+    color: white;
 }

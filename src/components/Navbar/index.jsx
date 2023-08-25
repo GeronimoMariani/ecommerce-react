@@ -1,5 +1,6 @@
 import logo from "../../assets/images/logo.png";
 import CartWidget from "./CartWidget";
+import { FiChevronDown } from "react-icons/fi";
 import "./styles.css";
 
 const Navbar = () => {
@@ -13,8 +14,12 @@ const Navbar = () => {
                     <li className="navItem">
                         <button className="navButton">INICIO</button>
                     </li>
-                    <li className="navItem">
-                        <button className="navButton">PRODUCTOS</button>
+                    <li className="navItem productos">
+                        <button className="navButton">PRODUCTOS <FiChevronDown/></button>
+                        <ul className="subList">
+                            <li><button className="navButton">NIKE</button></li>
+                            <li><button className="navButton">ADIDAS</button></li>
+                        </ul>
                     </li>
                     <li className="navItem">
                         <button className="navButton">CONTACTO</button>

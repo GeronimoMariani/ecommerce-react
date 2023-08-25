@@ -6,9 +6,6 @@ const ItemListContainer = ({ greeting }) => {
 
     function cambiarTitulo() {
         setTitulo("VAMOS A TENER UNA TIENDA DE SNEAKERS !!");
-        setTimeout(function(){
-            setTitulo("MUY PRONTO !!");
-        },2000);
     }
 
     return (

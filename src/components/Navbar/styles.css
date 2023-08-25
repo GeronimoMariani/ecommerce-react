@@ -4,7 +4,7 @@
     justify-content: space-between;
     width: 100%;
     height: 100px;
-    background-color: gray;
+    background-color: black;
 }
 
 .subNavBar {
@@ -15,18 +15,41 @@
 .list {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     margin-left: 3rem;
 }
 
 .navButton {
     padding: 0.5rem;
-    background-color: gray;
-    color: black;
-    border: 0px solid;
+    background-color: transparent;
+    color: white;
+    border: 0;
     font-size: 1.4rem;
     font-weight: 500;
     cursor: pointer;
+}
+
+.subList {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+.subList > li:hover {
+    background-color: white;
+}
+
+.subList > li:hover > button {
+    color: black;
+}
+
+.productos:hover > .subList {
+    display: block;
 }
 
 .logo {
