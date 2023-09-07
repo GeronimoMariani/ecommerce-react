@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     height: 100px;
     background-color: black;
 }
@@ -22,19 +21,17 @@
 
 .navButton {
     padding: 0.5rem;
-    background-color: transparent;
     color: white;
-    border: 0;
     font-size: 1.4rem;
     font-weight: 500;
-    cursor: pointer;
 }
 
 .subList {
     display: none;
     position: absolute;
     background-color: black;
-    width: 100px;
+    width: 200px;
+    height: auto;
     text-align: center;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #000000;
@@ -44,7 +41,11 @@
     background-color: white;
 }
 
-.subList > li:hover > button {
+.subList > li {
+    padding: 10px;
+}
+
+.subList > li:hover > a {
     color: black;
 }
 

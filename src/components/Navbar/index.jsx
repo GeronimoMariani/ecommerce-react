@@ -2,27 +2,28 @@ import logo from "../../assets/images/logo.png";
 import CartWidget from "./CartWidget";
 import { FiChevronDown } from "react-icons/fi";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <nav className="navBar">
             <div className="subNavBar">
                 <div>
-                    <a href="../../index.html"><img className="logo" src={logo} alt="logo" /></a>
+                    <Link to="/"><img className="logo" src={logo} alt="logo" /></Link>
                 </div>
                 <ul className="list">
                     <li className="navItem">
-                        <button className="navButton">INICIO</button>
+                        <Link to="/" className="navButton">INICIO</Link>
                     </li>
                     <li className="navItem productos">
-                        <button className="navButton">PRODUCTOS <FiChevronDown/></button>
+                        <Link to="" className="navButton">PRODUCTOS <FiChevronDown/></Link>
                         <ul className="subList">
-                            <li><button className="navButton">NIKE</button></li>
-                            <li><button className="navButton">ADIDAS</button></li>
+                            <li><Link to="" className="navButton">NIKE</Link></li>
+                            <li><Link to="" className="navButton">ADIDAS</Link></li>
                         </ul>
                     </li>
                     <li className="navItem">
-                        <button className="navButton">CONTACTO</button>
+                        <Link to="" className="navButton">GUÍA DE TALLES</Link>
                     </li>
                 </ul>
             </div>
