@@ -1,13 +1,14 @@
-import Item from "../Item"
-import "./styles.css"
+import Item from "../Item";
+import "./styles.css";
+import { toCapital } from "../../helpers/toCapital";
 
 
-const ItemList = ( {productos} ) => {
+const ItemList = ( {productos, titulo} ) => {
 
     return (
-        <div className="container">
-            <h1 className="mainTitle">Productos</h1>
-            <div className="productos">
+        <div>
+            <h1 className="mainTitle">{toCapital(titulo)}</h1>
+            <div className="containerProductos">
                 { productos.map( (producto) => <Item producto={producto} key={producto.id} /> ) }
             </div>
         </div>

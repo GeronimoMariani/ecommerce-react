@@ -1,0 +1,41 @@
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.producto:hover {
+    box-shadow: 1px 1px 2px 2px #7e7979;
+}
+
+.producto > img {
+    width: 100%;
+    height: auto;
+}
+
+.producto > h3 {
+    font-size: 27px;
+    margin-top: 1rem;
+}
+
+.producto > a {
+    padding: .8rem;
+    border-radius: 10px;
+    border: 0;
+    margin: 1rem 0;
+    font-size: 17px;
+    color: white;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.producto:hover > a {
+    visibility: visible;
+}

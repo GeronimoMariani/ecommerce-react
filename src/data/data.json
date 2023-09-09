@@ -1,90 +1,90 @@
 [
-    {
-        "id": "01",
-        "nombre": "Air Force Low First Use Orange",
-        "categoria": "Air Force Low",
-        "marca": "Nike",
-        "precio": 63.999,
-        "image": "../assets/images/air-force-1-low-pixel-gold-chain.jpg"
-    },
-    {
-        "id": "02",
-        "nombre": "Air Force Low Pixel Gold Chain",
-        "categoria": "Air Force Low",
-        "marca": "Nike",
-        "precio": 63.999,
-        "image": "../../assets/images/air-force-1-low-pixel-gold-chain.jpg"
-    },
-    {
-        "id": "03",
-        "nombre": "Air Force Low Travis Scott Sail Black",
-        "categoria": "Air Force Low",
-        "marca": "Nike",
-        "precio": 63.999,
-        "image": "./assets/images/air-force-1-low-travis-scott-sail-black.jpg"
-    },
-    {
-        "id": "04",
-        "nombre": "Air Force Low Undefeated",
-        "categoria": "Air Force Low",
-        "marca": "Nike",
-        "precio": 63.999,
-        "image": "./assets/images/air-force-1-low-undefeated.jpg"
-    },
-    {
-        "id": "05",
-        "nombre": "Air Force High Brotherhood",
-        "categoria": "Air Force High",
-        "marca": "Nike",
-        "precio": 59.999,
-        "image": "./assets/images/air-force-1-high-brotherhood.jpg"
-    },
-    {
-        "id": "06",
-        "nombre": "Air Force High Switch Light Smoke Grey",
-        "categoria": "Air Force High",
-        "marca": "Nike",
-        "precio": 59.999,
-        "image": "./assets/images/air-force-1-high-switch-light-smoke-grey.jpg"
-    },
-    {
-        "id": "07",
-        "nombre": "Air Force High Travis Scott",
-        "categoria": "Air Force High",
-        "marca": "Nike",
-        "precio": 59.999,
-        "image": "./assets/images/air-force-1-high-travis.scott.jpg"
-    },
-    {
-        "id": "08",
-        "nombre": "Forum x Bad Bunny Black",
-        "categoria": "Forum Bad Bunny",
-        "marca": "Adidas",
-        "precio": 63.999,
-        "image": "./assets/images/adidas-forum-bad-bunny-black.jpg"
-    },
-    {
-        "id": "09",
-        "nombre": "Forum x Bad Bunny First Cafe",
-        "categoria": "Forum Bad Bunny",
-        "marca": "Adidas",
-        "precio": 52.999,
-        "image": "./assets/images/adidas-forum-x-bad-bunny-first-cafe.jpg"
-    },
-    {
-        "id": "10",
-        "nombre": "Forum x Bad Bunny Powerphase Benito",
-        "categoria": "Forum Bad Bunny",
-        "marca": "Adidas",
-        "precio": 63.999,
-        "image": "./assets/images/forum_xbadbunny_powerphase-benito.jpg"
-    },
-    {
-        "id": "11",
-        "nombre": "Forum Low Bold",
-        "categoria": "Forum Low",
-        "marca": "Adidas",
-        "precio": 63.999,
-        "image": "./assets/images/adidas-forum-low-bold.jpg"
-    }
+	{
+		"id": 1,
+		"nombre": "Air Force Low First Use Orange",
+		"categoria": "Air Force Low",
+		"marca": "nike",
+		"precio": 63.999,
+		"image": "https://i.imgur.com/NQNtFAu.jpg"
+	},
+	{
+		"id": 2,
+		"nombre": "Air Force Low Pixel Gold Chain",
+		"categoria": "Air Force Low",
+		"marca": "nike",
+		"precio": 63.999,
+		"image": "https://i.imgur.com/skH1VEl.jpg"
+	},
+	{
+		"id": 3,
+		"nombre": "Air Force Low Travis Scott Sail Black",
+		"categoria": "Air Force Low",
+		"marca": "nike",
+		"precio": 63.999,
+		"image": "https://i.imgur.com/5e2mzBh.jpg"
+	},
+	{
+		"id": 4,
+		"nombre": "Air Force Low Undefeated",
+		"categoria": "Air Force Low",
+		"marca": "nike",
+		"precio": 63.999,
+		"image": "https://i.imgur.com/l0rZDJr.jpg"
+	},
+	{
+		"id": 5,
+		"nombre": "Air Force High Brotherhood",
+		"categoria": "Air Force High",
+		"marca": "nike",
+		"precio": 59.999,
+		"image": "https://i.imgur.com/WkMor0x.jpg"
+	},
+	{
+		"id": 6,
+		"nombre": "Air Force High Switch Light Smoke Grey",
+		"categoria": "Air Force High",
+		"marca": "nike",
+		"precio": 59.999,
+		"image": "https://i.imgur.com/rVuHMxG.jpg"
+	},
+	{
+		"id": 7,
+		"nombre": "Air Force High Travis Scott",
+		"categoria": "Air Force High",
+		"marca": "nike",
+		"precio": 59.999,
+		"image": "https://i.imgur.com/KrSmBwc.jpg"
+	},
+	{
+		"id": 8,
+		"nombre": "Forum x Bad Bunny Black",
+		"categoria": "Forum Bad Bunny",
+		"marca": "adidas",
+		"precio": 63.999,
+		"image": "https://i.imgur.com/9uRuA2O.jpg"
+	},
+	{
+		"id": 9,
+		"nombre": "Forum x Bad Bunny First Cafe",
+		"categoria": "Forum Bad Bunny",
+		"marca": "adidas",
+		"precio": 52.999,
+		"image": "https://i.imgur.com/TPlBPYy.jpg"
+	},
+	{
+		"id": 10,
+		"nombre": "Forum x Bad Bunny Powerphase Benito",
+		"categoria": "Forum Bad Bunny",
+		"marca": "adidas",
+		"precio": 63.999,
+		"image": "https://i.imgur.com/dDZJpsu.jpg"
+	},
+	{
+		"id": 11,
+		"nombre": "Forum Low Bold",
+		"categoria": "Forum Low",
+		"marca": "adidas",
+		"precio": 63.999,
+		"image": "https://i.imgur.com/bmyXPRy.jpg"
+	}
 ]
