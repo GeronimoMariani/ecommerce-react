@@ -86,5 +86,13 @@
 		"marca": "adidas",
 		"precio": 63.999,
 		"image": "https://i.imgur.com/bmyXPRy.jpg"
+	},
+	{
+		"id": 12,
+		"nombre": "Yeezy 350 Zebra",
+		"categoria": "Yeezy 350",
+		"marca": "adidas",
+		"precio": 63.999,
+		"image": "https://i.imgur.com/p0Gyv88.jpg"
 	}
 ]
