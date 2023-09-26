@@ -1,3 +1,4 @@
+import ItemCount from "../ItemCount";
 import "./styles.css";
 
 const ItemDetail = ( {item} ) => {
@@ -9,7 +10,8 @@ const ItemDetail = ( {item} ) => {
             <div className="detail">
                 <h2>{item.name}</h2>
                 <h3>${item.price}</h3>
-                <a className="comprar" href="https://www.instagram.com/" target="_blank">COMPRAR</a>
+                <h3>Stock:{item.stock}</h3>
+                <ItemCount item={item} />
             </div>
         </div>
     )

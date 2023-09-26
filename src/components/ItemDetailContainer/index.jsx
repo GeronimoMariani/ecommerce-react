@@ -21,7 +21,7 @@ const ItemDetailContainer = () => {
     return (
         <div>
             {loading ? (<div className="loading"><Oval height={80} width={80} color="#144999" wrapperStyle={{}} wrapperClass="" visible={true} ariaLabel='oval-loading' secondaryColor="144999" strokeWidth={2} strokeWidthSecondary={2}/></div>) :
-            item && <ItemDetail item={item} />
+            item && <ItemDetail item={item} key={item} />
             }
         </div>
     )

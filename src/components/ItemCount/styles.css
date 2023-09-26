@@ -1,0 +1,33 @@
+.itemCount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.itemCount > button {
+    padding: .8rem 1.7rem;
+    border-radius: 10px;
+    border: 0;
+    margin: 1rem 0;
+    font-size: 20px;
+    color: white;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.itemCount > p {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.addCart {
+    padding: .8rem 1.7rem;
+    border-radius: 10px;
+    border: 0;
+    margin: 1rem 0;
+    font-size: 20px;
+    color: white;
+    background-color: #000000;
+    cursor: pointer;
+}

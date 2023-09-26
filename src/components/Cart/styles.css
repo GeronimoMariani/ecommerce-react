@@ -1,0 +1,82 @@
+.containerCarrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.boxCarrito {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.boxCarrito > img {
+    width: 15%;
+    height: auto;
+    border-right: 1px solid black;
+}
+
+.boxDetalles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.buttonTrash {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(175, 30, 30);
+}
+
+.total {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.comprar {
+    display: flex;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.comprar > h2 {
+    padding: .8rem 1.7rem;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    color: black;
+}
+
+.comprar > a {
+    padding: .8rem 1.7rem;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
+
+.total > button {
+    padding: .8rem 1.7rem;
+    border-radius: 10px;
+    border: 0;
+    margin: 1rem 0;
+    font-size: 20px;
+    color: white;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.carritoVacio {
+    text-align: center;
+}

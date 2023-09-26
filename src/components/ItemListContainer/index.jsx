@@ -10,7 +10,6 @@ const ItemListContainer = () => {
     const { marca } = useParams();
     const [titulo, setTitulo] = useState("Productos");
     const [loading, setLoading] = useState(true);
-    console.log(marca);
     useEffect(() => {
         const db = getFirestore();
         const productsRef = collection(db, "productos");
