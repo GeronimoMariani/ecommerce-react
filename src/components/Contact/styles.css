@@ -41,3 +41,8 @@
     background-color: #000000;
     cursor: pointer;
 }
+
+.userId {
+    text-align: center;
+    margin-top: 5rem;
+}

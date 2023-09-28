@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./styles.css";
 import { useForm } from 'react-hook-form';
+import { addDoc, collection, getFirestore } from 'firebase/firestore';
 
 const Contacto = () => {
 
     const {register, handleSubmit} = useForm();
+    const [userId, setUserId] = useState("");
 
-    const enviar = (form) => {
-        console.log(form);
+    const enviar = (data) => {
+        const user = {
+            contact: data
+        }
+        const db = getFirestore();
+        const userRef = collection(db, "contacto");
+        addDoc(userRef, user)
+            .then((doc) => {
+                setUserId(doc.id);
+            })
+    }
+
+    if(userId) {
+        return (
+            <div>
+                <h1 className="mainTitle">Muchas gracias por contactarnos.</h1>
+                <h2 className='userId'>A la brevedad nos pondremos en contacto con usted.</h2>
+            </div>
+        )
     }
 
     return (
