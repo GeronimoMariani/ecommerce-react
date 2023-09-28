@@ -17,7 +17,6 @@ export const CartProvider = ( {children} ) => {
         nuevoCarrito.push(itemAgregado);
         }
         setCarrito(nuevoCarrito);
-        console.log(nuevoCarrito);
     };
 
     const cantidadCarrito = () => {
@@ -30,7 +29,6 @@ export const CartProvider = ( {children} ) => {
 
     const handleDeleteItem = (id) => {
         const remove = carrito.filter((item) => item.id !== id);
-        console.log(remove);
         setCarrito(remove);
     };
 

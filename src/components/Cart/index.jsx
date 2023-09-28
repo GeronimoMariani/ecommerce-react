@@ -3,6 +3,7 @@ import { CartContext } from '../../context/CartContext'
 import { BsTrash3 } from "react-icons/bs";
 import { ImSad } from "react-icons/im";
 import "./styles.css";
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
 
@@ -23,7 +24,7 @@ const Cart = () => {
                                     <h3>Cantidad: {prod.cantidad}</h3> 
                                 </div>
                                 <div className='trash'>
-                                    <button className='buttonTrash' onClick={handleDeleteItem}><BsTrash3 /></button>
+                                    <button className='buttonTrash' onClick={() => handleDeleteItem(prod.id)}><BsTrash3 /></button>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +35,7 @@ const Cart = () => {
                 <div className='total'>
                     <div className='comprar'>
                         <h2>Total:{precioTotal()}</h2>
-                        <a href="https://www.instagram.com/" target="_blank">Comprar</a>
+                        <Link to="/checkout">Comprar</Link>
                     </div>
                     <button onClick={vaciarCarrito}>Vaciar carrito</button>
                 </div> :
