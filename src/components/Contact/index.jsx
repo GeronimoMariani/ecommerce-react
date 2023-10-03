@@ -5,10 +5,12 @@ import { addDoc, collection, getFirestore } from 'firebase/firestore';
 
 const Contacto = () => {
 
-    const {register, handleSubmit} = useForm();
+    const {register, handleSubmit, getValues} = useForm();
     const [userId, setUserId] = useState("");
+    
+    const user = getValues("nombre");
 
-    const enviar = (data) => {
+    const datos = (data) => {
         const user = {
             contact: data
         }
@@ -23,7 +25,7 @@ const Contacto = () => {
     if(userId) {
         return (
             <div>
-                <h1 className="mainTitle">Muchas gracias por contactarnos.</h1>
+                <h1 className="mainTitle">{`Muchas gracias por contactarnos ${user}.`}</h1>
                 <h2 className='userId'>A la brevedad nos pondremos en contacto con usted.</h2>
             </div>
         )
@@ -32,7 +34,7 @@ const Contacto = () => {
     return (
         <div className='divForm'>
             <h1 className='mainTitle'>Contacto</h1>
-            <form className='formulario' onSubmit={handleSubmit(enviar)}>
+            <form className='formulario' onSubmit={handleSubmit(datos)}>
                 <input type="text" placeholder='Ingresá tu nombre' {...register("nombre")} />
                 <input type="email" placeholder='Ingresá tu e-mail' {...register("email")} />
                 <input type="phone" placeholder='Ingresá tu teléfono' {...register("telefono")} />

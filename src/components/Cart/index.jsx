@@ -34,7 +34,7 @@ const Cart = () => {
                 carrito.length > 0 ?
                 <div className='total'>
                     <div className='comprar'>
-                        <h2>Total:{precioTotal()}</h2>
+                        <h2>Total: ${precioTotal()}</h2>
                         <Link to="/checkout">Comprar</Link>
                     </div>
                     <button onClick={vaciarCarrito}>Vaciar carrito</button>

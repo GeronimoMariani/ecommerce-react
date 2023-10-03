@@ -10,7 +10,9 @@ const Checkout = () => {
 
     const { carrito, precioTotal, vaciarCarrito} = useContext(CartContext);
 
-    const {register, handleSubmit} = useForm();
+    const {register, handleSubmit, getValues} = useForm();
+
+    const user = getValues("nombre");
 
     const buy = (data) => {
         const order = {
@@ -31,7 +33,7 @@ const Checkout = () => {
     if(orderId) {
         return (
             <>
-                <h1 className="mainTitle">Muchas gracias por su compra.</h1>
+                <h1 className="mainTitle">{`Muchas gracias por su compra ${user}.`}</h1>
                 <h2 className='orderId'>Tu número de pedido es: {orderId}</h2>
             </>
         )
@@ -43,6 +45,7 @@ const Checkout = () => {
             <form className='formulario' onSubmit={handleSubmit(buy)}>
                 <input type="text" placeholder='Ingresá tu nombre' {...register("nombre")} />
                 <input type="email" placeholder='Ingresá tu e-mail' {...register("email")} />
+                <input type="text" placeholder='Ingresá tu dirección' {...register("direccion")} />
                 <input type="phone" placeholder='Ingresá tu teléfono' {...register("telefono")} />
                 <button type='submit'>COMPRAR</button>
             </form>
